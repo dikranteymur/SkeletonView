@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class ViewController: UIViewController {
 
@@ -23,11 +24,19 @@ class ViewController: UIViewController {
             for _ in 0..<30 {
                 self.data.append("Some Text")
             }
+            
+            self.tableView.stopSkeletonAnimation()
+            self.view.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.25))
+            
             self.tableView.reloadData()
         }
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.isSkeletonable = true
+        tableView.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .link, secondaryColor: .white), animation: nil, transition: .crossDissolve(0.25))
+    }
 
 
 }
@@ -45,5 +54,11 @@ extension ViewController: UITableViewDataSource {
         }
         
         return cell
+    }
+}
+
+extension ViewController: SkeletonTableViewDataSource {
+    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+        return MyTableViewCell.identifier
     }
 }
