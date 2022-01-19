@@ -13,6 +13,7 @@
 		1D1396DD27984DFE001226CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1396DB27984DFE001226CE /* Main.storyboard */; };
 		1D1396DF27984E00001226CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D1396DE27984E00001226CE /* Assets.xcassets */; };
 		1D1396E227984E00001226CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1396E027984E00001226CE /* LaunchScreen.storyboard */; };
+		1D1396EA27986009001226CE /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1396E927986009001226CE /* MyTableViewCell.swift */; };
 		8C16A178524E65816B9A3B12 /* Pods_SkeletonViewPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED47457CA9570FD1CB687AA /* Pods_SkeletonViewPOC.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		1D1396DE27984E00001226CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D1396E127984E00001226CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D1396E327984E00001226CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D1396E927986009001226CE /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		8ED47457CA9570FD1CB687AA /* Pods_SkeletonViewPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkeletonViewPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E585AD2810CBAE3D4C9CDC80 /* Pods-SkeletonViewPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonViewPOC.debug.xcconfig"; path = "Target Support Files/Pods-SkeletonViewPOC/Pods-SkeletonViewPOC.debug.xcconfig"; sourceTree = "<group>"; };
 		E72BB0F9A7EE068BBA0A856B /* Pods-SkeletonViewPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonViewPOC.release.xcconfig"; path = "Target Support Files/Pods-SkeletonViewPOC/Pods-SkeletonViewPOC.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 				E585AD2810CBAE3D4C9CDC80 /* Pods-SkeletonViewPOC.debug.xcconfig */,
 				E72BB0F9A7EE068BBA0A856B /* Pods-SkeletonViewPOC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,6 +78,7 @@
 				1D1396D727984DFE001226CE /* SceneDelegate.swift */,
 				1D1396D927984DFE001226CE /* ViewController.swift */,
 				1D1396DB27984DFE001226CE /* Main.storyboard */,
+				1D1396E927986009001226CE /* MyTableViewCell.swift */,
 				1D1396DE27984E00001226CE /* Assets.xcassets */,
 				1D1396E027984E00001226CE /* LaunchScreen.storyboard */,
 				1D1396E327984E00001226CE /* Info.plist */,
@@ -208,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D1396DA27984DFE001226CE /* ViewController.swift in Sources */,
+				1D1396EA27986009001226CE /* MyTableViewCell.swift in Sources */,
 				1D1396D627984DFE001226CE /* AppDelegate.swift in Sources */,
 				1D1396D827984DFE001226CE /* SceneDelegate.swift in Sources */,
 			);
